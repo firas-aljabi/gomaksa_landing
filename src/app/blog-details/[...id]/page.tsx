@@ -6,7 +6,7 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 
 export const metadata = {
-   title: "Blog Details Iitechie - IT Solutions and Services React Next js Template",
+   title: "Blog Details Goma - IT Solution",
 };
 const index = ({ params }: { params: { id: number } }) => {
    const blogs = inner_blog_data;

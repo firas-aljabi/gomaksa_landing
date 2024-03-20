@@ -4,7 +4,7 @@ import Slider from 'react-slick'
 import testimonial_data from "@/data/TestimonialData"
 import Image, { StaticImageData } from "next/image";
 
-import testiThumb_1 from "@/assets/img/testimonial/826.700(2).webp";
+import testiThumb_1 from "@/assets/img/testimonial/2.webp";
 import testiThumb_2 from "@/assets/img/testimonial/2.webp";
 import testiBigImg from "@/assets/img/testimonial/02.webp";
 

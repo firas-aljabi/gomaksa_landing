@@ -2,7 +2,7 @@ import Image from "next/image"
 import ApproachArea from "./ApproachArea";
 
 import aboutThumb_1 from "@/assets/img/home-cyber/tab/2.webp";
-import aboutIcon_1 from "@/assets/img/home-cyber/about/icon-826.700(2).webp";
+import aboutIcon_1 from "@/assets/img/home-cyber/about/icon-4.webp";
 import aboutIcon_2 from "@/assets/img/home-cyber/about/icon-2.webp";
 
 const AboutTwo = () => {

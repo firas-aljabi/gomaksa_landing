@@ -7,7 +7,7 @@ import UseSticky from "@/hooks/UseSticky"
 import { useState } from "react";
 import HeaderSearchbar from "./menu/HeaderSearchbar";
 
-import logo_1 from "@/assets/img/logo.webp";
+import logo_1 from "@/assets/img/GomaLogo.webp";
 
 const HeaderTwo = () => {
 
@@ -27,7 +27,7 @@ const HeaderTwo = () => {
                <div className="responsive-mobile-menu">
                   <button
                      onClick={toggleMobileMenu}
-                     className={`menu toggle-btn d-block d-lg-none ${isActive ? "open" : ""}`} data-target="#Iitechie_main_menu"
+                     className={`menu toggle-btn d-block d-lg-none ${isActive ? "open" : ""}`} data-target="#goma_main_menu"
                      aria-expanded="false" aria-label="Toggle navigation">
                      <span className="icon-left"></span>
                      <span className="icon-right"></span>
@@ -41,7 +41,7 @@ const HeaderTwo = () => {
                      <i className="fa fa-search"></i>
                   </a>
                </div>
-               <div className={`collapse navbar-collapse ${isActive ? "sopen" : ""}`} id="Iitechie_main_menu">
+               <div className={`collapse navbar-collapse ${isActive ? "sopen" : ""}`} id="goma_main_menu">
                   <ul className="navbar-nav menu-open text-lg-start">
                      <NavMenu />
                   </ul>

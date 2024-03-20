@@ -3,12 +3,12 @@ import Link from "next/link"
 import SocialIcon from "@/components/common/SocialIcon"
 import footer_data from "@/data/FooterData"
 
-import footerLogo from "@/assets/img/logo-3.webp"
-import footerGallery_1 from "@/assets/img/gallery/826.700(2).webp"
+import footerLogo from "@/assets/img/GomaLogo.webp"
+import footerGallery_1 from "@/assets/img/gallery/6.webp"
 import footerGallery_2 from "@/assets/img/gallery/8.webp"
 import footerGallery_3 from "@/assets/img/gallery/9.webp"
 import footerGallery_4 from "@/assets/img/gallery/10.webp"
-import footerGallery_5 from "@/assets/img/gallery/1826.700(2).webp"
+import footerGallery_5 from "@/assets/img/gallery/7.webp"
 import footerGallery_6 from "@/assets/img/gallery/12.webp"
 
 const gallery_data: StaticImageData[] = [footerGallery_1, footerGallery_2, footerGallery_3, footerGallery_4, footerGallery_5, footerGallery_6,];

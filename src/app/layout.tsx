@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={isDev}>
       <head>
-        <meta name="description" content="Iitechie - IT Solutions and Services React Next js Template" />
+        <meta name="description" content="goma - IT Solutions " />
         <link rel="icon" href="/favicon.webp" sizes="any" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Poppins:400,500,600,700|Rubik:400,500,600,700|family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" />
       </head>

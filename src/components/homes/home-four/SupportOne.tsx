@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import titleShape from "@/assets/img/about/0826.700(2).webp"
+import titleShape from "@/assets/img/about/826.700(2).webp"
 import supportThumb from "@/assets/img/about/h4-2.webp"
 
 const SupportOne = () => {

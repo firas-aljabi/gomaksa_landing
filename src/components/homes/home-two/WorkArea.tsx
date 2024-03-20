@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import work_data from '@/data/WorkData'
 
-import workShape from '@/assets/img/shape/826.700(2).webp'
+import workShape from '@/assets/img/shape/3.webp'
 
 const WorkArea = () => {
    return (

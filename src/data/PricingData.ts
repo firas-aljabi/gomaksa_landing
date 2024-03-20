@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 import priceIcon_1 from "@/assets/img/icon/6.webp";
-import priceIcon_2 from "@/assets/img/icon/826.700(2).webp";
+import priceIcon_2 from "@/assets/img/icon/6.webp";
 import priceIcon_3 from "@/assets/img/icon/8.webp";
 
 

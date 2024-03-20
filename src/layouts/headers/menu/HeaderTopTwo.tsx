@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import headerTopLogo from "@/assets/img/logo.webp"
+import headerTopLogo from "@/assets/img/GomaLogo.webp"
 
 const HeaderTopTwo = () => {
    return (

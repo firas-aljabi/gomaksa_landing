@@ -4,7 +4,7 @@ import BlogDetailsComment from "./BlogDetailsComment";
 import Link from "next/link";
 import Image from "next/image";
 
-import blogDetailsthumb_1 from "@/assets/img/blog/826.700(2).webp"
+import blogDetailsthumb_1 from "@/assets/img/blog/10.webp"
 import blogDetailsthumb_2 from "@/assets/img/blog/09.webp"
 
 interface ContentType {

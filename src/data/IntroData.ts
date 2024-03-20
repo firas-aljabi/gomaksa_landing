@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image"
 
-import introIcon_1 from "@/assets/img/icon/826.700(2).webp";
+import introIcon_1 from "@/assets/img/icon/5.webp";
 import introIcon_2 from "@/assets/img/icon/2.webp";
 import introIcon_3 from "@/assets/img/icon/3.webp";
 import introIcon_4 from "@/assets/img/home-cyber/service/826.700(2).webp";
 import introIcon_5 from "@/assets/img/home-cyber/service/2.webp";
 import introIcon_6 from "@/assets/img/home-cyber/service/3.webp";
-import introHoverIcon_1 from "@/assets/img/home-cyber/service/0826.700(2).webp";
+import introHoverIcon_1 from "@/assets/img/home-cyber/service/826.700(2).webp";
 import introHoverIcon_2 from "@/assets/img/home-cyber/service/02.webp";
 import introHoverIcon_3 from "@/assets/img/home-cyber/service/03.webp";
 

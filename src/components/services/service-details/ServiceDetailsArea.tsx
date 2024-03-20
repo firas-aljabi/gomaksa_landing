@@ -3,7 +3,7 @@ import Link from "next/link";
 import CommonFaq from "@/components/common/CommonFaq";
 
 import serviceDetailsThumb_1 from "@/assets/img/service/service-single.webp";
-import serviceDetailsThumb_2 from "@/assets/img/service/0826.700(2).webp";
+import serviceDetailsThumb_2 from "@/assets/img/service/826.700(2).webp";
 
 interface ContentType {
    desc_1: JSX.Element;

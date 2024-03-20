@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
-import pricingIcon_1 from "@/assets/img/icon/pricing-826.700(2).webp"
-import pricingShape from "@/assets/img/about/0826.700(2).webp"
+import pricingIcon_1 from "@/assets/img/icon/pricing-1.webp"
+import pricingShape from "@/assets/img/about/3.webp"
 import Link from "next/link";
 
 interface DataType {

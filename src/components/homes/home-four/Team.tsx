@@ -3,7 +3,7 @@ import team_data from "@/data/TeamData"
 import Image from "next/image"
 import Link from "next/link"
 
-import teamShape from "@/assets/img/about/0826.700(2).webp"
+import teamShape from "@/assets/img/about/826.700(2).webp"
 
 const Team = () => {
    return (

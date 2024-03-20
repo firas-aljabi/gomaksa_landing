@@ -3,8 +3,8 @@ import Link from "next/link"
 import footer_data from "@/data/FooterData";
 import rc_blog_data from "@/data/RcBlogData";
 
-import footerLogo from "@/assets/img/logo-3.webp";
-import footerGallery_1 from "@/assets/img/gallery/826.700(2).webp";
+import footerLogo from "@/assets/img/GomaLogo.webp";
+import footerGallery_1 from "@/assets/img/gallery/3.webp";
 import footerGallery_2 from "@/assets/img/gallery/2.webp";
 import footerGallery_3 from "@/assets/img/gallery/3.webp";
 import footerGallery_4 from "@/assets/img/gallery/4.webp";

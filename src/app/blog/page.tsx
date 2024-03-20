@@ -2,7 +2,7 @@ import Blog from "@/components/blogs/blog";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Blog Iitechie - IT Solutions and Services React Next js Template",
+   title: "Blog Goma - IT Solution",
 };
 const index = () => {
    return (

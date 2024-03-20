@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import commentImg_1 from "@/assets/img/testimonial/826.700(2).webp"
+import commentImg_1 from "@/assets/img/testimonial/2.webp"
 import commentImg_2 from "@/assets/img/testimonial/2.webp"
 
 const BlogDetailsComment = () => {

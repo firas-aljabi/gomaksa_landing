@@ -2,7 +2,7 @@ import blog_data from "@/data/BlogData"
 import Image from "next/image"
 import Link from "next/link"
 
-import titleShape from "@/assets/img/about/0826.700(2).webp"
+import titleShape from "@/assets/img/about/826.700(2).webp"
 
 const Blog = () => {
    return (

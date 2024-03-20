@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import aboutImg_1 from "@/assets/img/about/h4-826.700(2).webp";
-import aboutImg_2 from "@/assets/img/about/0826.700(2).webp";
+import aboutImg_1 from "@/assets/img/about/826.700(2).webp";
+import aboutImg_2 from "@/assets/img/about/1m.webp";
 
 const About = () => {
    return (

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import bannerImg from "@/assets/img/banner/1826.700(2).webp"
+import bannerImg from "@/assets/img/banner/826.700(2).webp"
 
 const Banner = () => {
    return (
