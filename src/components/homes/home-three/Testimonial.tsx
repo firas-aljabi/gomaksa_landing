@@ -4,7 +4,7 @@ import Image from "next/image"
 import Slider from "react-slick"
 import { useRef } from "react"
 
-import testiIcon from "@/assets/img/testimonial/0826.700(2).webp"
+import testiIcon from "@/assets/img/testimonial/1.webp"
 
 const setting = {
    infinite: true,

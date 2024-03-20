@@ -3,7 +3,7 @@ import testimonial_data from "@/data/TestimonialData"
 import Image from "next/image"
 import Slider from "react-slick"
 
-import testimonialThumb from "@/assets/img/about/h5-826.700(2).webp"
+import testimonialThumb from "@/assets/img/about/1s.webp"
 
 const setting = {
    dots: false,

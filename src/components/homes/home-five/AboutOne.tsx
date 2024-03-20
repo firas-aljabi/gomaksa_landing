@@ -2,7 +2,7 @@
 import Image, { StaticImageData } from "next/image"
 import { useState } from "react";
 
-import bannerImg from "@/assets/img/home-cyber/tab/826.700(2).webp"
+import bannerImg from "@/assets/img/home-cyber/tab/2.webp"
 import bannerListImg from "@/assets/img/home-cyber/tab/icon-shild.webp"
 
 const tab_title: string[] = ["Our Valus", "Tranparency", "Our Mission", "History"];
