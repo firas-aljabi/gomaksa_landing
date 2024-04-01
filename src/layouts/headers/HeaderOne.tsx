@@ -6,6 +6,7 @@ import HeaderTopOne from "./menu/HeaderTopOne";
 import UseSticky from "@/hooks/UseSticky"
 import { useState } from "react";
 import HeaderSearchbar from "./menu/HeaderSearchbar";
+import { useLanguage,LanguageProvider } from '../../hooks/LanguageContext';
 
 import logo_1 from "@/assets/img/GomaLogo.webp";
 
@@ -14,12 +15,14 @@ const HeaderOne = () => {
    const [isActive, setIsActive] = useState<boolean>(false);
    const { sticky } = UseSticky();
    const [isSearch, setIsSearch] = useState<boolean>(false);
+   const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
 
    const toggleMobileMenu = () => {
       setIsActive(!isActive); // Toggle the isActive state
    };
-
+// const language = typeof window !== 'undefined' ? localStorage.getItem("lann") : null;
    return (
+     
       <>
          <HeaderTopOne />
          <nav className={`navbar navbar-area navbar-expand-lg navbar-area-1 ${sticky ? "sticky-active" : ""}`}>
@@ -52,15 +55,16 @@ const HeaderOne = () => {
                      <i className="fa fa-search"></i>
                   </a>
                   */}
-                  <Link className="it-btn btn-base" href="tel:+1(570)2129021">Get Started</Link>
+                  <Link className="it-btn btn-base" href="tel:+1(570)2129021">{language === "ar" ? "ابدأ" : "Get Started"} </Link>
                </div>
                
             </div>
-         </nav>
+         </nav>  
 
       {/**  <HeaderSearchbar isSearch={isSearch} setIsSearch={setIsSearch} />
        * */}  
       </>
+     
    )
 }   
 

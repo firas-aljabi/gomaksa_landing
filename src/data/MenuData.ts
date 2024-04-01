@@ -8,12 +8,13 @@ interface MenuItem {
       title: string;
    }[];
 }[];
+const language = typeof window !== 'undefined' ? localStorage.getItem("lann") : null;
 
 const menu_data: MenuItem[] = [
    {
       id: 1,
       has_dropdown: false,
-      title: "Home",
+      title: `${language === "ar" ? "الصفحة الرئيسية"  : "Home"}`,
       link: "/",
     //  sub_menus: [
        //  { link: "/", title: "Home 01" },
@@ -26,7 +27,7 @@ const menu_data: MenuItem[] = [
    {
       id: 2,
       has_dropdown: false,
-      title: "Service",
+      title: `${language === "ar" ? "خدماتنا"  : "Service"}`,
       link: "/service",
       //sub_menus: [
         // { link: "/service", title: "Service" },
@@ -36,7 +37,7 @@ const menu_data: MenuItem[] = [
    {
       id: 3,
       has_dropdown: false,
-      title: "About Us",
+      title: `${language === "ar" ? "عنا"  : "About Us"}`,
       link: "/about",
      // sub_menus: [
        //  { link: "/about", title: "About Us" },
@@ -59,7 +60,7 @@ const menu_data: MenuItem[] = [
    {
       id: 5,
       has_dropdown: false,
-      title: "Contact Us",
+      title: `${language === "ar" ? "تواصل معنا"  : "Contact Us"}`,
       link: "/contact",
    },
 ];

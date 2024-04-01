@@ -17,10 +17,7 @@ const Breadcrumb = ({ title, sub_title }: any) => {
                <div className="col-xl-7 col-lg-8">
                   <div className="breadcrumb-inner text-center">
                      <h2 className="page-title">{title}</h2>
-                     <ul className="page-list">
-                        <li><Link href="/">Home</Link></li>
-                        <li>{sub_title}</li>
-                     </ul>
+                    
                   </div>
                </div>
             </div>

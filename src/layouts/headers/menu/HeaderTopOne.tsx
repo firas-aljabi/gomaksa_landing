@@ -1,7 +1,11 @@
 import Link from "next/link"
+import LanguageSwitcher from '../../../LanguageSwitcher';
+import type { AppProps } from 'next/app';
+import { LanguageProvider } from '../../../hooks/LanguageContext';
 
 const HeaderTopOne = () => {
    return (
+    
       <div className="navbar-top">
          <div className="container">
             <div className="row">
@@ -13,6 +17,9 @@ const HeaderTopOne = () => {
                      <li>
                         <p><i className="far fa-envelope"></i> support@gomaksa.com</p>
                      </li>
+                     <li>
+                      <LanguageSwitcher/>
+                     </li> 
                   </ul>
                </div>
                <div className="col-sm-6">
@@ -32,6 +39,7 @@ const HeaderTopOne = () => {
             </div>
          </div>
       </div>
+    
    )
 }
 

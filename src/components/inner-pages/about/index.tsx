@@ -1,3 +1,4 @@
+"use client"
 import Breadcrumb from "@/components/common/Breadcrumb"
 import HomeOneAbout from "@/components/homes/home-one/About"
 import ChooseArea from "@/components/homes/home-one/ChooseArea"
@@ -10,12 +11,15 @@ import SkillArea from "./SkillArea"
 import Blog from "@/components/homes/home-one/Blog"
 import CtaArea from "@/components/common/CtaArea"
 import FooterOne from "@/layouts/footers/FooterOne"
+import { useLanguage } from "@/hooks/LanguageContext"
 
 const About = () => {
+  const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
+
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="About Us" sub_title="About Us" />
+      <Breadcrumb title={language === "ar" ? "معلومات عنا" : "About US"} />
       <HomeOneAbout />
       <ChooseArea />
      

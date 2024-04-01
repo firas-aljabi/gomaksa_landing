@@ -1,12 +1,15 @@
+"use client"
 import Image from "next/image";
 import Skillbar from "@/components/common/Skillbar";
 
 import skillbarImg_1 from "@/assets/img/bg/4.webp";
-import skillbarImg_2 from "@/assets/img/other/360.308(1).webp";
+import skillbarImg_2 from "@/assets/img/banner/-1--.png";
 import skillbarImg_3 from "@/assets/img/other/259.189.webp";
 import skillbarImg_4 from "@/assets/img/other/259.197.webp";
+import { useLanguage } from "@/hooks/LanguageContext";
 
 const SkillArea = () => {
+   const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
    return (
       <div className="skill-area bg-relative bg-sky pd-top-120 pd-bottom-120">
          <Image className="half-bg-right" src={skillbarImg_1} alt="img" />
@@ -14,10 +17,10 @@ const SkillArea = () => {
             <div className="row">
                <div className="col-lg-6 pe-5 mb-5 mb-lg-0">
                   <div className="section-title mb-0">
-                     <h5 className="sub-title right-line">Professional Skill </h5>
-                     <h2 className="title">We have professional skilled </h2>
-                     <p className="content">Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque</p>
-                  </div>
+                     <h5 className="sub-title right-line">{language === "ar" ? "مهارة إحترافية"  : "Professional Skill"} </h5>
+                     <h2 className="title">{language === "ar" ? "لدينا المهارات المهنية"  : "We have professional skilled "}</h2>
+                     {/* <p className="content">Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque</p> */}
+                  </div> 
 
                   <div className="skill-progress-area mt-4">
                      <Skillbar/>

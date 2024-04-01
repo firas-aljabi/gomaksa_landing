@@ -1,7 +1,10 @@
+"use client"
+import { useLanguage } from '@/hooks/LanguageContext';
 import Link from 'next/link'
 import React from 'react'
 
 const CtaArea = () => {
+   const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
    return (
       <div className="call-to-action-area pd-top-120 pd-bottom-120 text-center bg-overlay-base"
          style={{ backgroundImage: `url('/assets/img/bg/8.webp')` }}>
@@ -9,9 +12,9 @@ const CtaArea = () => {
             <div className="row justify-content-center">
                <div className="col-lg-6 col-md-8">
                   <div className="single-call-to-action-inner style-white">
-                     <h5>We are here to answer your questions 24/7</h5>
-                     <h2>Need for it solution services</h2>
-                     <Link className="it-btn btn-black mt-3" href="/contact">Contact With Us</Link>
+                     <h5>{language === "ar" ? "نحن هنا للإجابة على أسئلتك 24/7"  : "We are here to answer your questions 24/7"}</h5>
+                     <h2>{language === "ar" ? "تحتاج إلى خدمات الحل"  : "Need for it solution services"}</h2>
+                     <Link className="it-btn btn-black mt-3" href="/contact">{language === "ar" ? "تواصل معنا"  : "Contact With Us"}</Link>
                   </div>
                </div>
             </div>

@@ -1,4 +1,6 @@
+"use client"
 // import { Rubik, Rajdhani } from 'next/font/google'
+import { LanguageProvider } from "@/hooks/LanguageContext"
 import "../styles/index.scss"
 
 
@@ -16,13 +18,14 @@ import "../styles/index.scss"
 
 export default function RootLayout({
   children,
-}: {
+}: { 
   children: React.ReactNode
 }) {
 
   const isDev = process.env.NODE_ENV === 'development'
 
   return (
+    <LanguageProvider>
     <html lang="en" suppressHydrationWarning={isDev}>
       <head>
         <meta name="description" content="goma - IT Solutions " />
@@ -32,7 +35,8 @@ export default function RootLayout({
       <body suppressHydrationWarning={true} className="sc5">
         {/* <body suppressHydrationWarning={true} className={`sc5 ${body.variable} ${heading.variable}`}> */}
         {children}
-      </body>
+      </body> 
     </html>
+    </LanguageProvider>
   )
 }

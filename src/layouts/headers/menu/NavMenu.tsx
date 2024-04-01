@@ -1,13 +1,62 @@
 "use client";
-import menu_data from "@/data/MenuData";
-import Link from "next/link.js";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useLanguage,LanguageProvider } from '../../../hooks/LanguageContext';
 
 
 const NavMenu = () => {
-    const currentRoute = usePathname();
+     const currentRoute = usePathname();
     const [navTitle, setNavTitle] = useState("");
+    const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
+    const [menuData, setMenuData] = useState<MenuItem[]>([]);
+    type MenuItem = {
+        id: number;
+        has_dropdown: boolean;
+        title: string;
+        link: string;
+        sub_menus?: {
+            link: string;
+            title: string;
+        }[];
+    };
+    
+    
+// const language = typeof window !== 'undefined' ? localStorage.getItem("lann") : null;
+useEffect(() => {
+    // Listen for language changes
+    // const storedLanguage = typeof window !== 'undefined' ? localStorage.getItem("lann") : "en";
+    // setLanguage(storedLanguage || "en");
+
+    // Define menu data here so it updates when the language changes
+    const menu_data = [
+        {
+            id: 1,
+            has_dropdown: false,
+            title: `${language === "ar" ? "الصفحة الرئيسية" : "Home"}`,
+            link: "/",
+        },
+        {
+            id: 2,
+            has_dropdown: false,
+            title: `${language === "ar" ? "خدماتنا" : "Service"}`,
+            link: "/service",
+        },
+        {
+            id: 3,
+            has_dropdown: false,
+            title: `${language === "ar" ? "عنا" : "About Us"}`,
+            link: "/about",
+        },
+        {
+            id: 5,
+            has_dropdown: false,
+            title: `${language === "ar" ? "تواصل معنا" : "Contact Us"}`,
+            link: "/contact",
+        },
+    ];
+    setMenuData(menu_data);
+}, [language]); // This effect depends on `language`, so it runs anytime `language` changes.
 
     const isMenuItemActive = (menuLink: string) => {
         return currentRoute === menuLink;
@@ -24,30 +73,30 @@ const NavMenu = () => {
         } else {
             setNavTitle(menu);
         }
-    };
+    }; 
 
     return (
         <>
-            {menu_data.map((menu: any) => (
-                <li key={menu.id} className={`${menu.has_dropdown ? "menu-item-has-children" : ""} ${(isMenuItemActive(menu.link) || (menu.sub_menus && menu.sub_menus.some((sub_m: any) => sub_m.link && isSubMenuItemActive(sub_m.link)))) ? "  active" : ""}`}>
-                    <Link href={menu.link} className={`${navTitle === menu.title ? "show" : ""}`} onClick={() => openMobileMenu(menu.title)}>
+      
+            {menuData.map((menu) => (
+                <li key={menu.id} className={`${menu.has_dropdown ? "menu-item-has-children" : ""} ${isMenuItemActive(menu.link) ? "active" : ""}`}>
+                    <Link href={menu.link}>
                         {menu.title}
                     </Link>
                     {menu.has_dropdown && (
-                        <>
-                            <ul className={`sub-menu ${navTitle === menu.title ? "show" : ""}`}>
-                                {menu.sub_menus && menu.sub_menus.map((sub_m: any, i: any) => (
-                                    <li key={i} className={`${sub_m.link && isSubMenuItemActive(sub_m.link) ? "active" : ""}`}>
-                                        <Link href={sub_m.link}>
-                                            <span>{sub_m.title}</span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </>
+                        <ul className={`sub-menu ${navTitle === menu.title ? "show" : ""}`}>
+                            {menu.sub_menus && menu.sub_menus.map((sub_m, i) => (
+                                <li key={i} className={isSubMenuItemActive(sub_m.link) ? "active" : ""}>
+                                    <Link href={sub_m.link}>
+                                         {sub_m.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
                     )}
                 </li>
             ))}
+          
         </>
     );
 };
