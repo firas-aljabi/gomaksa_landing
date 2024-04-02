@@ -1,15 +1,25 @@
-import TeamDetails from "@/components/inner-pages/team-details";
-import Wrapper from "@/layouts/Wrapper";
+// import TeamDetails from "@/components/inner-pages/team-details";
+// import Wrapper from "@/layouts/Wrapper";
 
-export const metadata = {
-   title: "Team Details Goma - IT Solution",
-};
-const index = () => {
+// export const metadata = {
+//    title: "Team Details Goma - IT Solution",
+// };
+// const index = () => {
+//    return (
+//       <Wrapper>
+//          <TeamDetails />
+//       </Wrapper>
+//    )
+// }
+
+// export default index 
+function index() {
    return (
-      <Wrapper>
-         <TeamDetails />
-      </Wrapper>
+     <div>
+       
+     </div>
    )
-}
-
-export default index
+ }
+ 
+ export default index
+ 

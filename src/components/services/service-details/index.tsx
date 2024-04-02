@@ -8,7 +8,7 @@ const ServiceDetails = () => {
    return (
       <>
          <HeaderOne />
-         <Breadcrumb title="Service Details" sub_title="Service Details" />
+         <Breadcrumb title="Service Details"  />
          <ServiceDetailsArea />
          <CtaArea/>
          <FooterOne/>

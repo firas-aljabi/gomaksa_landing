@@ -8,11 +8,11 @@ const Teamdetails = () => {
   return (
     <>
       <HeaderOne/>
-      <Breadcrumb title="Team Details" sub_title="Team Details" />
+      <Breadcrumb title="Team Details"  />
       <TeamDetailsArea/>
       <CtaArea/>
       <FooterOne/>
-    </>
+    </> 
   )
 }
 

@@ -19,7 +19,6 @@ const SkillArea = () => {
                   <div className="section-title mb-0">
                      <h5 className="sub-title right-line">{language === "ar" ? "مهارة إحترافية"  : "Professional Skill"} </h5>
                      <h2 className="title">{language === "ar" ? "لدينا المهارات المهنية"  : "We have professional skilled "}</h2>
-                     {/* <p className="content">Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque</p> */}
                   </div> 
 
                   <div className="skill-progress-area mt-4">

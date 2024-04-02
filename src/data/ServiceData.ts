@@ -24,8 +24,8 @@ interface DataType {
    icon_img?:StaticImageData;
    hover_icon_img?:StaticImageData;
 }[];
-const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
-
+// const { language, setLanguage } = useLanguage(); // Use the useLanguage hook
+let language=''
 const service_data: DataType[] = [
    {
       id: 1,

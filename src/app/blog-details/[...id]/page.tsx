@@ -15,7 +15,7 @@ const index = ({ params }: { params: { id: number } }) => {
    return (
       <Wrapper>
          <HeaderOne />
-         <Breadcrumb title="Our blog Details" sub_title="Blog Details" />
+         <Breadcrumb title="Our blog Details"  />
          <BlogDetailsArea single_blog={single_blog} key={single_blog?.id} />
          <FooterOne />
       </Wrapper>

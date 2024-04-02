@@ -8,7 +8,7 @@ const ProjectDetails = () => {
    return (
       <>
          <HeaderOne />
-         <Breadcrumb title="Project Details" sub_title="Project Details" />
+         <Breadcrumb title="Project Details" />
          <ProjectDetailsArea />
          <CtaArea />
          <FooterOne />

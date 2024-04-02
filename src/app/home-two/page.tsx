@@ -1,15 +1,25 @@
-import HomeTwo from "@/components/homes/home-two";
-import Wrapper from "@/layouts/Wrapper";
+// import HomeTwo from "@/components/homes/home-two";
+// import Wrapper from "@/layouts/Wrapper";
 
-export const metadata = {
-   title: "Home Two Goma - IT Solution",
-};
-const index = () => {
+// export const metadata = {
+//    title: "Home Two Goma - IT Solution",
+// };
+// const index = () => {
+//    return (
+//       <Wrapper>
+//          <HomeTwo />
+//       </Wrapper>
+//    )
+// }
+
+// export default index
+function index() {
    return (
-      <Wrapper>
-         <HomeTwo />
-      </Wrapper>
+     <div>
+       
+     </div>
    )
-}
-
-export default index
+ }
+ 
+ export default index
+ 

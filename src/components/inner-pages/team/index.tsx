@@ -11,7 +11,7 @@ const Team = () => {
    return (
       <>
          <HeaderOne />
-         <Breadcrumb title="Team" sub_title="Team" />
+         <Breadcrumb title="Team"  />
          <TeamArea />
          <Counter />
          <SkillArea style={true} />

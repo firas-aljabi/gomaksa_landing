@@ -22,12 +22,12 @@ const HomeThree = () => {
          <Brand />
          <Service />
          <About />
-         <Project />
+         <Project /> 
          <Team style={false} />
          <FAQ />
          <PricingPlan />
          <Counter />
-         <WorkArea />
+         <WorkArea /> 
          <Testimonial/>
          <SkillArea/>
          <Blog />
